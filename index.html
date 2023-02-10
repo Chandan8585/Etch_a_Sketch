@@ -13,13 +13,15 @@
     <h1>Etch-A-Sketch</h1>
     <div class="header">
         <h6>Select the Size</h6>
-        <button id="popup" class="btn btn-danger">Select</button>
+        <button id="popup" class="btn btn-danger" onclick="getSize()">Select</button>
         </div>
+        <p id="message"></p>
+        <p id="draw"></p>
         <div class="board"></div>
         <div class="footer">
-            <button class="btn btn-dark">Black</button>
-            <button class="btn btn-warning"> Random</button>
-            <button class="btn btn-info">Reset</button>
+            <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+            <button class="btn btn-warning" onclick="setColor('random')"> Random</button>
+            <button class="btn btn-info" onclick="resetBoard()">Reset</button>
             
         </div>
     </div>
